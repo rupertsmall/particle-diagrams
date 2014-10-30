@@ -1,3 +1,5 @@
+
+
 int S=200;
 float sweight = 2; //stroke weight
 color black=color(0);
@@ -20,8 +22,9 @@ void draw() {
   //t_4_a(cred, cblue, cgreen);
   //t_2(cred, cblue, cgreen);
   //t_8_a(cred, cblue, cgreen);
+  t_8_a_mod(cgreen);
   //t_4_b(cred, cblue, cgreen);
-  t_4_b_modA(cred, cblue, cgreen);
+  //t_4_b_modA(cred, cblue, cgreen);
   //t_4_b_modB(cred, cblue, cgreen);
   //t_8_b(cred, cblue);
   //t_8_c(cred, cblue);
@@ -186,6 +189,23 @@ void t_8_a(color c1, color c2, color c3) {
 
   save("t_8_a.png");
 }
+
+void t_8_a_mod(color c) {
+  stroke(0);
+  
+  mk_share(220, 100, 310, 10, cblue);
+  mk_share(400, 100, 310, 190, cblue);
+  k_share(220, 100, 310, 190, cblue);
+  k_share(310, 10, 400, 100, cblue);
+
+  k_share(230, 100, 310, 20, c);
+  k_share(310, 180, 390, 100, c);
+  mk_share(230, 100, 310, 180, c);
+  mk_share(390, 100, 310, 20, c);
+
+  save("t_8_a_mod.png");
+}
+
 
 void t_4_b(color c1, color c2, color c3) {
 
