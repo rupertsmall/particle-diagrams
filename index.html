@@ -551,6 +551,224 @@
 \end{tikzpicture}
 </code></pre>
 
+<h3>
+<a id="dyck-words-and-catalan-numbers" class="anchor" href="#dyck-words-and-catalan-numbers" aria-hidden="true"><span class="octicon octicon-link"></span></a>Dyck Words and Catalan Numbers</h3>
+
+<pre><code>\begin{tikzpicture}
+\fill[orange!25] (1,0) rectangle (2,1);
+\fill[orange!25] (2,0) rectangle (3,1);
+\fill[orange!25] (2,1) rectangle (3,2);
+\draw[step=1cm,gray,very thin] (0,0) grid (3,3);
+\draw[dashed] (0,0) -- +(3,3);
+\draw[very thick,-&gt;] (0,0) -- (1,0);
+\draw[very thick,-&gt;] (1,0) -- (1,1);
+\draw[very thick,-&gt;] (1,1) -- (2,1);
+\draw[very thick,-&gt;] (2,1) -- (2,2);
+\draw[very thick,-&gt;] (2,2) -- (3,2);
+\draw[very thick,-&gt;] (3,2) -- (3,3);
+\end{tikzpicture}
+</code></pre>
+
+<pre><code>\begin{tikzpicture}
+\fill[orange!25] (2,0) rectangle (3,1);
+\fill[orange!25] (2,1) rectangle (3,2);
+\draw[step=1cm,gray,very thin] (0,0) grid (3,3);
+\draw[dashed] (0,0) -- +(3,3);
+\draw[very thick,-&gt;] (0,0) -- (1,0);
+\draw[very thick,-&gt;] (1,0) -- (2,0);
+\draw[very thick,-&gt;] (2,0) -- (2,1);
+\draw[very thick,-&gt;] (2,1) -- (2,2);
+\draw[very thick,-&gt;] (2,2) -- (3,2);
+\draw[very thick,-&gt;] (3,2) -- (3,3);
+\end{tikzpicture} 
+</code></pre>
+
+<pre><code>\begin{tikzpicture}
+\fill[orange!25] (1,0) rectangle (2,1);
+\fill[orange!25] (2,0) rectangle (3,1);
+\draw[step=1cm,gray,very thin] (0,0) grid (3,3);
+\draw[dashed] (0,0) -- +(3,3);
+\draw[very thick,-&gt;] (0,0) -- (1,0);
+\draw[very thick,-&gt;] (1,0) -- (1,1);
+\draw[very thick,-&gt;] (1,1) -- (2,1);
+\draw[very thick,-&gt;] (2,1) -- (3,1);
+\draw[very thick,-&gt;] (3,1) -- (3,2);
+\draw[very thick,-&gt;] (3,2) -- (3,3);
+\end{tikzpicture}
+</code></pre>
+
+<pre><code>\begin{tikzpicture}
+\fill[orange!25] (2,0) rectangle (3,1);
+\draw[step=1cm,gray,very thin] (0,0) grid (3,3);
+\draw[dashed] (0,0) -- +(3,3);
+\draw[very thick,-&gt;] (0,0) -- (1,0);
+\draw[very thick,-&gt;] (1,0) -- (2,0);
+\draw[very thick,-&gt;] (2,0) -- (2,1);
+\draw[very thick,-&gt;] (2,1) -- (3,1);
+\draw[very thick,-&gt;] (3,1) -- (3,2);
+\draw[very thick,-&gt;] (3,2) -- (3,3);
+\end{tikzpicture}
+</code></pre>
+
+<pre><code> \begin{tikzpicture}
+\draw[step=1cm,gray,very thin] (0,0) grid (3,3);
+\draw[dashed] (0,0) -- +(3,3);
+\draw[very thick,-&gt;] (0,0) -- (1,0);
+\draw[very thick,-&gt;] (1,0) -- (2,0);
+\draw[very thick,-&gt;] (2,0) -- (3,0);
+\draw[very thick,-&gt;] (3,0) -- (3,1);
+\draw[very thick,-&gt;] (3,1) -- (3,2);
+\draw[very thick,-&gt;] (3,2) -- (3,3);
+\end{tikzpicture}
+</code></pre>
+
+<pre><code>\begin{tikzpicture}
+\draw[step=1cm,gray,very thin] (0,0) grid (6,6);
+\draw[dashed] (0,0) -- +(6,6);
+\draw[red!80, very thick,-&gt;] (2,3) -- (2,4);
+\draw[red!80, very thick,-&gt;] (2,4) -- (3,4);
+\draw[red!80, very thick,-&gt;] (3,4) -- (3,5);
+\draw[red!80, very thick,-&gt;] (3,5) -- (4,5);
+\draw[red!80, very thick,-&gt;] (4,5) -- (5,5);
+\draw[red!80, very thick,-&gt;] (5,5) -- (5,6);
+\draw[red!80, very thick,-&gt;] (5,6) -- (6,6);
+\fill[gray!50](2,3) circle (.1cm) ;
+\draw[gray, dashed] (0,1) -- +(5,5);
+\draw[very thick,-&gt;] (0,0) -- (1,0);
+\draw[very thick,-&gt;] (1,0) -- (1,1);
+\draw[very thick,-&gt;] (1,1) -- (2,1);
+\draw[very thick,-&gt;] (2,1) -- (2,2);
+\draw[very thick,-&gt;] (2,2) -- (2,3);
+\end{tikzpicture} 
+</code></pre>
+
+<pre><code>\begin{tikzpicture}
+\draw[step=1cm,gray,very thin] (0,0) grid (5,7);
+\draw[dashed] (0,0) -- +(5,5);
+\draw[red!80, very thick,-&gt;] (2,3) -- (3,3);
+\draw[red!80, very thick,-&gt;] (3,3) -- (3,4);
+\draw[red!80, very thick,-&gt;] (3,4) -- (4,4);
+\draw[red!80, very thick,-&gt;] (4,4) -- (4,5);
+\draw[red!80, very thick,-&gt;] (4,5) -- (4,6);
+\draw[red!80, very thick,-&gt;] (4,6) -- (5,6);
+\draw[red!80, very thick,-&gt;] (5,6) -- (5,7);
+\fill[gray!50](2,3) circle (.1cm) ;
+\draw[gray, dashed] (0,1) -- +(5,5);
+\draw[very thick,-&gt;] (0,0) -- (1,0);
+\draw[very thick,-&gt;] (1,0) -- (1,1);
+\draw[very thick,-&gt;] (1,1) -- (2,1);
+\draw[very thick,-&gt;] (2,1) -- (2,2);
+\draw[very thick,-&gt;] (2,2) -- (2,3);
+\end{tikzpicture}
+</code></pre>
+
+<h3>
+<a id="particle-diagrams" class="anchor" href="#particle-diagrams" aria-hidden="true"><span class="octicon octicon-link"></span></a>Particle Diagrams</h3>
+
+<p>TikZ for particle diagrams</p>
+
+<h3>
+<a id="fourth-moment" class="anchor" href="#fourth-moment" aria-hidden="true"><span class="octicon octicon-link"></span></a>Fourth Moment</h3>
+
+<pre><code>\begin{tikzpicture}[scale=1.5]\draw[ultra thick, red] (0,0) -- (0.75,.7);\draw[ultra thick, dashed, red] (0.75,.7) -- (1.5,0);\draw[ultra thick, dashed, red] (0,0) -- (0.75,-.7);\draw[ultra thick, red] (0.75,-.7) -- (1.5,0);\node[circle, fill=white, draw=black, text=black, inner sep=1pt] at (0,0) {$\mu$}; \node[circle, fill=white, draw=black, text=black,  inner sep=1pt] at (1.5,0) {$\rho$}; \node[circle, fill=white, draw=black, text=black,  inner sep=1pt] at (0.75,-.7) {$\nu$}; \node[circle, fill=white, draw=black, text=black,  inner sep=1pt] at (0.75,.7) {$\sigma$};
+\end{tikzpicture}
+</code></pre>
+
+<pre><code>\begin{tikzpicture}[scale=1.5]
+\draw[ultra thick, dashed, blue] (0,0) -- (0.75,.7);\draw[ultra thick, blue] (0.75,.7) -- (1.5,0);\draw[ultra thick, blue] (0,0) -- (0.75,-.7);\draw[ultra thick, dashed, blue] (0.75,-.7) -- (1.5,0);\node[circle, fill=white, draw=black, text=black, inner sep=1pt] at (0,0) {$\mu$}; \node[circle, fill=white, draw=black, text=black, inner sep=1pt] at (1.5,0) {$\rho$}; \node[circle, fill=white, draw=black, text=black, inner sep=1pt] at (0.75,-.7) {$\nu$}; \node[circle, fill=white, draw=black, text=black, inner sep=1pt] at (0.75,.7) {$\sigma$};\end{tikzpicture}
+</code></pre>
+
+<p>Combined Term</p>
+
+<pre><code>\begin{tikzpicture}[scale=1.5]
+\draw[ultra thick, red] (-.2,0) -- (0.75,.9);
+\draw[ultra thick, dashed, red] (0.75,.9) -- (1.7,0);
+\draw[ultra thick, dashed, red] (-.2,0) -- (0.75,-.9);
+\draw[ultra thick, red] (0.75,-.9) -- (1.7,0);
+\draw[ultra thick, dashed, blue] (0,0) -- (0.75,.7);
+\draw[ultra thick, blue] (0.75,.7) -- (1.5,0);
+\draw[ultra thick, blue] (0,0) -- (0.75,-.7);
+\draw[ultra thick, dashed, blue] (0.75,-.7) -- (1.5,0);
+\node[circle, fill=white, draw=black, text=black, inner sep=1.2pt] at (-.05,0) {$\mu$}; 
+\node[circle, fill=white, draw=black, text=black,  inner sep=1.2pt] at (1.55,0) {$\rho$}; 
+\node[circle, fill=white, draw=black, text=black,  inner sep=1.2pt] at (0.75,-.78) {$\nu$};
+ \node[circle, fill=white, draw=black, text=black,  inner sep=1.2pt] at (0.75,.78) {$\sigma$};
+\end{tikzpicture}
+</code></pre>
+
+<h3>
+<a id="loops-fourth-moment" class="anchor" href="#loops-fourth-moment" aria-hidden="true"><span class="octicon octicon-link"></span></a>Loops Fourth Moment</h3>
+
+<pre><code>\begin{tikzpicture}[node distance=1.6cm]
+\node (sigma) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries] {\footnotesize $\sigma$};
+\node (rho) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries, below right of=sigma] {\footnotesize $\rho$};
+\node (mu) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries, below left of=sigma] {\footnotesize $\mu$};
+\node (nu) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries, below right of =mu] {\footnotesize $\nu$};
+\draw (mu) to [out=90, in=180] (sigma);
+\draw (sigma) to [out=-90, in=0] (mu);
+\end{tikzpicture}
+</code></pre>
+
+<pre><code>\begin{tikzpicture}[node distance=1.6cm]
+\node (sigma) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries] {\footnotesize $\sigma$};
+\node (rho) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries, below right of=sigma] {\footnotesize $\rho$};
+\node (mu) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries, below left of=sigma] {\footnotesize $\mu$};
+\node (nu) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries, below right of =mu] {\footnotesize $\nu$};
+\draw (sigma) to [out=0, in=90] (rho);
+\draw (rho) to [out=180, in=-90] (sigma);
+\end{tikzpicture}
+</code></pre>
+
+<pre><code>\begin{tikzpicture}[node distance=1.6cm]
+\node (sigma) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries] {\footnotesize $\sigma$};
+\node (rho) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries, below right of=sigma] {\footnotesize $\rho$};
+\node (mu) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries, below left of=sigma] {\footnotesize $\mu$};
+\node (nu) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries, below right of =mu] {\footnotesize $\nu$};
+\draw (mu) to [out=0, in=90] (nu);
+\draw (nu) to [out=180, in=-90] (mu);
+\end{tikzpicture}
+</code></pre>
+
+<pre><code>\begin{tikzpicture}[node distance=1.6cm]
+\node (sigma) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries] {\footnotesize $\sigma$};
+\node (rho) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries, below right of=sigma] {\footnotesize $\rho$};
+\node (mu) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries, below left of=sigma] {\footnotesize $\mu$};
+\node (nu) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries, below right of =mu] {\footnotesize $\nu$};
+\draw (rho) to [out=-90, in=0] (nu);
+\draw (nu) to [out=90, in=180] (rho);
+\end{tikzpicture}
+</code></pre>
+
+<pre><code>\begin{tikzpicture}[node distance=1.6cm]
+\node (sigma) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries] {\footnotesize $\sigma$};
+\node (rho) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries, below right of=sigma] {\footnotesize $\rho$};
+\node (mu) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries, below left of=sigma] {\footnotesize $\mu$};
+\node (nu) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries, below right of =mu] {\footnotesize $\nu$};
+\draw (mu) to [out=90, in=180] (sigma);
+\draw (sigma) to [out=-90, in=180] (rho);
+\draw (rho) to [out=-90, in=0] (nu);
+\draw (nu) to [out=90, in=0] (mu);
+\end{tikzpicture}
+</code></pre>
+
+<pre><code>\begin{tikzpicture}[node distance=1.6cm]
+\node (sigma) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries] {\footnotesize $\sigma$};
+\node (rho) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries, below right of=sigma] {\footnotesize $\rho$};
+\node (mu) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries, below left of=sigma] {\footnotesize $\mu$};
+\node (nu) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries, below right of =mu] {\footnotesize $\nu$};
+\draw (mu) to [out=0, in=-90] (sigma);
+\draw (sigma) to [out=0, in=90] (rho);
+\draw (rho) to [out=180, in=90] (nu);
+\draw (nu) to [out=180, in=-90] (mu);
+\end{tikzpicture}
+</code></pre>
+
+<h3>
+<a id="sixth-moment" class="anchor" href="#sixth-moment" aria-hidden="true"><span class="octicon octicon-link"></span></a>Sixth Moment</h3>
+
+<pre><code>coming soon
+</code></pre>
+
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/rupertsmall/particle-diagrams">Particle-diagrams</a> is maintained by <a href="https://github.com/rupertsmall">rupertsmall</a>.</span>
 
