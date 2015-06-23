@@ -766,7 +766,370 @@
 <h3>
 <a id="sixth-moment" class="anchor" href="#sixth-moment" aria-hidden="true"><span class="octicon octicon-link"></span></a>Sixth Moment</h3>
 
-<pre><code>coming soon
+<pre><code>\begin{tikzpicture}[scale=1.7]
+\draw[ultra thick, black] (1.5,0) -- (2.8,0);\node[circle, fill=white, draw=black, text=black,  inner sep=1pt] at (2.8,0) {$p$};
+\draw[ultra thick, red] (0,0) -- (0.75,.7);\draw[ultra thick, dashed, red] (0.75,.7) -- (1.5,0);\draw[ultra thick, dashed, red] (0,0) -- (0.75,-.7);\draw[ultra thick, red] (0.75,-.7) -- (1.5,0);
+\draw[ultra thick, dashed, blue] (-0.2,0) -- (0.72,.85);\draw[ultra thick, blue] (0.78,.85) -- (1.7,0);\draw[ultra thick, blue] (-.2,0) -- (0.72,-.85);\draw[ultra thick, dashed, blue] (0.78,-.85) -- (1.7,0);
+\node[circle, fill=white, draw=black, text=black, inner sep=1.5pt] at (-.1,0) {$\mu$}; \node[circle, fill=white, draw=black, text=black,  inner sep=1.5pt] at (1.6,0) {$\rho$}; \node[circle, fill=white, draw=black, text=black,  inner sep=1.5pt] at (0.75,-.8) {$\nu$}; \node[circle, fill=white, draw=black, text=black,  inner sep=1.5pt] at (0.75,.8) {$\sigma$};
+\end{tikzpicture}
+</code></pre>
+
+<pre><code>\begin{tikzpicture}[scale=1.7]
+ \draw[ultra thick, dashed, red] (0,-.5) -- (1.4,-.5);
+ \draw[ultra thick, dashed, red] (0,.7) -- (1.4,.7);
+\draw[ultra thick, red] (0,-.5) -- (0,.7);
+\draw[ultra thick, red] (1.4,-.5) -- (1.4,.7);
+\draw[ultra thick, blue] (0,.7) -- (.7,.3);
+\draw[ultra thick, black] (.7,.3) -- (1.4,.7);
+\draw[ultra thick, blue] (0,-.5) -- (.7,-.9);
+\draw[ultra thick, black] (.7,-.9) -- (1.4,-.5);
+\draw[ultra thick, dashed, blue] (.65,.3) -- (.65,-.9);
+ \draw[ultra thick, dashed, black] (.75,.3) -- (.75,-.9);
+\draw[ultra thick, dashed, blue] (-.12,.7) -- (-.12,-.5);
+ \draw[ultra thick, dashed, black] (1.52,.7) -- (1.52,-.5);
+\node[circle, fill=white, draw=black, text=black,  inner sep=1.5pt] at (-.1,.7) {$v$};
+\node[circle, fill=white, draw=black, text=black,  inner sep=1.5pt] at (.7,.3) {$u$};
+\node[circle, fill=white, draw=black, text=black,  inner sep=1.5pt] at (1.5,.7) {$t$};
+\node[circle, fill=white, draw=black, text=black,  inner sep=1.5pt] at (-.1,-.5) {$w$};
+\node[circle, fill=white, draw=black, text=black,  inner sep=1.5pt] at (0.7,-.9) {$p$};
+\node[circle, fill=white, draw=black, text=black,  inner sep=1.5pt] at (1.5,-.5) {$q$};
+\end{tikzpicture}
+</code></pre>
+
+<p>regular octohedron</p>
+
+<pre><code>\begin{tikzpicture}
+\draw[ultra thick, black] (0,0) -- (.9,-1);
+\draw[ultra thick, black] (1.75,0) -- (2.7,-1);
+\draw[ultra thick, dashed, black] (1.75,0) -- (.9,-1);
+\draw[ultra thick, dashed, black] (0,0) -- (2.7,-1);
+\draw[ultra thick, blue] (.9,-1) -- (1.4,2);
+\draw[ultra thick, dashed, blue] (2.7,-1) -- (1.4,2);
+\draw[ultra thick, dashed, red] (0,0) -- (1.4,2);
+\draw[ultra thick, red] (1.75,0) -- (1.4,2);
+\draw[ultra thick, dashed, blue] (.9,-1) -- (1.4,-2.9);
+\draw[ultra thick, blue] (2.7,-1) -- (1.4,-2.9);
+\draw[ultra thick, red] (0,0) -- (1.4,-2.9);
+\draw[ultra thick, dashed, red] (1.75,0) -- (1.4,-2.9);
+\node[circle, fill=white, draw=black, text=black,  inner sep=1pt] at (1.4,2) {$t$};
+\node[circle, fill=white, draw=black, text=black,  inner sep=1pt] at (0,0) {$p$};
+\node[circle, fill=white, draw=black, text=black,  inner sep=1pt] at (1.75,0) {$u$};
+\node[circle, fill=white, draw=black, text=black,  inner sep=1pt] at (2.7,-1) {$v$};
+\node[circle, fill=white, draw=black, text=black,  inner sep=1pt] at (.9,-1) {$q$};
+\node[circle, fill=white, draw=black, text=black,  inner sep=1pt] at (1.4,-2.9) {$w$};
+\end{tikzpicture}
+</code></pre>
+
+<p>standard diagram with two tails</p>
+
+<pre><code>\begin{tikzpicture}[scale=1.7]
+\draw[ultra thick, black] (1.5,0) -- (2.8,0);
+\draw[ultra thick, black] (2.8,0) -- (4.1,0);
+\node[circle, fill=white, draw=black, text=black,  inner sep=2pt] at (2.8,0) {$q$};
+\node[circle, fill=white, draw=black, text=black,  inner sep=2pt] at (4.1,0) {$t$};
+\draw[ultra thick, red] (0,0) -- (0.75,.7);
+\draw[ultra thick, dashed, red] (0.75,.7) -- (1.5,0);\draw[ultra thick, dashed, red] (0,0) -- (0.75,-.7);\draw[ultra thick, red] (0.75,-.7) -- (1.5,0);
+\draw[ultra thick, dashed, blue] (-0.2,0) -- (0.72,.85);
+\draw[ultra thick, blue] (0.78,.85) -- (1.7,0);
+\draw[ultra thick, blue] (-.2,0) -- (0.72,-.85);
+\draw[ultra thick, dashed, blue] (0.78,-.85) -- (1.7,0);
+\node[circle, fill=white, draw=black, text=black, inner sep=2pt] at (-.1,0) {$v$}; 
+\node[circle, fill=white, draw=black, text=black,  inner sep=2pt] at (1.6,0) {$p$}; 
+\node[circle, fill=white, draw=black, text=black,  inner sep=2pt] at (0.75,-.8) {$u$}; 
+\node[circle, fill=white, draw=black, text=black,  inner sep=2pt] at (0.75,.8) {$w$};
+\end{tikzpicture}
+</code></pre>
+
+<pre><code>\begin{tikzpicture}[scale=1.7]
+\draw[ultra thick, black] (-1.3,-.5) -- (0,-.5);
+\node[circle, fill=white, draw=black, text=black,  inner sep=1pt] at (-1.3,-.5) {$e$};
+ \draw[ultra thick, dashed, red] (0,-.5) -- (1.4,-.5);
+ \draw[ultra thick, dashed, red] (0,.7) -- (1.4,.7);
+\draw[ultra thick, red] (0,-.5) -- (0,.7);
+\draw[ultra thick, red] (1.4,-.5) -- (1.4,.7);
+\draw[ultra thick, blue] (0,.7) -- (.7,.3);
+\draw[ultra thick, black] (.7,.3) -- (1.4,.7);
+\draw[ultra thick, blue] (0,-.5) -- (.7,-.9);
+\draw[ultra thick, black] (.7,-.9) -- (1.4,-.5);
+\draw[ultra thick, dashed, blue] (.65,.3) -- (.65,-.9);
+ \draw[ultra thick, dashed, black] (.75,.3) -- (.75,-.9);
+\draw[ultra thick, dashed, blue] (-.12,.7) -- (-.12,-.5);
+ \draw[ultra thick, dashed, black] (1.52,.7) -- (1.52,-.5);
+\node[circle, fill=white, draw=black, text=black,  inner sep=1pt] at (0,.7) {$v$};
+\node[circle, fill=white, draw=black, text=black,  inner sep=1pt] at (.7,.3) {$u$};
+\node[circle, fill=white, draw=black, text=black,  inner sep=1pt] at (1.4,.7) {$t$};
+\node[circle, fill=white, draw=black, text=black,  inner sep=1pt] at (0,-.5) {$w$};
+\node[circle, fill=white, draw=black, text=black,  inner sep=1pt] at (0.7,-.9) {$p$};
+\node[circle, fill=white, draw=black, text=black,  inner sep=1pt] at (1.4,-.5) {$q$};
+\end{tikzpicture}
+</code></pre>
+
+<p>Two standard diagrams with shared center state</p>
+
+<pre><code>\begin{tikzpicture}[scale=1.7]
+\draw[ultra thick, dashed, green] (0,0) -- (0.75,.7);
+\draw[ultra thick, green] (0.75,.7) -- (1.5,0);
+\draw[ultra thick, green] (0,0) -- (0.75,-.7);
+\draw[ultra thick, dashed, green] (0.75,-.7) -- (1.5,0);
+\draw[ultra thick, blue] (-0.2,0) -- (0.72,.85);
+\draw[ultra thick, dashed, blue] (0.78,.85) -- (1.7,0);
+\draw[ultra thick, dashed, blue] (-.2,0) -- (0.72,-.85);
+\draw[ultra thick, blue] (0.78,-.85) -- (1.7,0);
+\node[circle, fill=white, draw=black, text=black, inner sep=2pt] at (-.1,0) {$t$}; 
+\node[circle, fill=white, draw=black, text=black,  inner sep=2pt] at (0.75,-.8) {$p$}; 
+\node[circle, fill=white, draw=black, text=black,  inner sep=2pt] at (0.75,.8) {$u$};
+
+\begin{scope}[shift={(1.7,0)}]
+\draw[ultra thick, dashed, red] (0,0) -- (0.75,.7);
+\draw[ultra thick, red] (0.75,.7) -- (1.5,0);
+\draw[ultra thick, red] (0,0) -- (0.75,-.7);
+\draw[ultra thick, dashed, red] (0.75,-.7) -- (1.5,0);
+\draw[ultra thick, black] (-0.2,0) -- (0.72,.85);
+\draw[ultra thick, dashed, black] (0.78,.85) -- (1.7,0);
+\draw[ultra thick, dashed, black] (-.2,0) -- (0.72,-.85);
+\draw[ultra thick, black] (0.78,-.85) -- (1.7,0);
+\node[circle, fill=white, draw=black, text=black, inner sep=4pt] at (-.1,0) {$c$}; 
+\node[circle, fill=white, draw=black, text=black,  inner sep=2pt] at (1.6,0) {$w$}; 
+\node[circle, fill=white, draw=black, text=black,  inner sep=2pt] at (0.75,-.8) {$v$}; 
+\node[circle, fill=white, draw=black, text=black,  inner sep=2pt] at (0.75,.8) {$e$};
+\end{scope}
+\end{tikzpicture}
+</code></pre>
+
+<p>Cuboid Diagram</p>
+
+<pre><code>\begin{tikzpicture}[scale=1.7]
+\draw[ultra thick, dashed, red] (0,0) -- (0.7,.2);
+\draw[ultra thick, red] (0.05,0) -- (0.05,-1.1);
+\draw[ultra thick, dashed, blue] (-.05,0) -- (-.05,-1.1);
+\draw[ultra thick, dashed, red] (0,-1.1) -- (.7,-.75);
+\draw[ultra thick, green] (.7,-.75) -- (1.55,-1);
+\draw[ultra thick, dashed, black] (1.6,-1) -- (1.6,0);
+\draw[ultra thick, dashed, green] (1.5,-1) -- (1.5,0);
+\draw[ultra thick, black] (1.55,0) -- (0.9,-.3);
+\draw[ultra thick, blue] (0,-1.1) -- (.9,-1.5);
+\draw[ultra thick, black] (.9,-1.5) -- (1.55,-1);
+\draw[ultra thick, green] (1.55,0) -- (.7,.2);
+\draw[ultra thick, dashed, green] (.7,.2) -- (.7,-.75);
+\draw[ultra thick, red] (.6,.2) -- (.6,-.75);
+\draw[ultra thick, blue] (0,0) -- (0.9,-.3);
+\node[circle, fill=white, draw=black, text=black,  inner sep=1pt] at (0.65,-.75) {$q$};
+\draw[ultra thick, dashed, blue] (.85,-.3) -- (.85,-1.5);
+\draw[ultra thick, dashed, black] (.95,-.3) -- (.95,-1.5);
+\node[circle, fill=white, draw=black, text=black, inner sep=1pt] at (0,0) {$c$}; 
+\node[circle, fill=white, draw=black, text=black,  inner sep=1pt] at (0.65,.2) {$p$}; 
+\node[circle, fill=white, draw=black, text=black,  inner sep=1pt] at (1.55,0) {$t$};
+\node[circle, fill=white, draw=black, text=black, inner sep=1pt] at (.9,-.3) {$u$}; 
+\node[circle, fill=white, draw=black, text=black,  inner sep=1pt] at (0,-1.1) {$e$}; 
+\node[circle, fill=white, draw=black, text=black, inner sep=1pt] at (1.55,-1) {$v$}; 
+\node[circle, fill=white, draw=black, text=black,  inner sep=1pt] at (0.9,-1.5) {$w$}; 
+\end{tikzpicture}
+</code></pre>
+
+<p>Fig 5.10</p>
+
+<pre><code>\begin{tikzpicture}[scale=1.7]
+\draw[ultra thick, black] (0,0) -- (1,0);
+\draw[ultra thick, black] (0,-1) -- (1,-1);
+\draw[ultra thick, dashed, black] (0,0) -- (0,-1);
+\draw[ultra thick, dashed, black] (.95,0) -- (.95,-1);
+\draw[ultra thick, dashed, green] (1,0) -- (2,0);
+\draw[ultra thick, dashed, green] (1,-1) -- (2,-1);
+\draw[ultra thick, green] (1.05,0) -- (1.05,-1);
+\draw[ultra thick, green] (2,0) -- (2,-1);
+\node[circle, fill=white, draw=black, text=black, inner sep=1pt] at (0,0) {$t$}; 
+\node[circle, fill=white, draw=black, text=black,  inner sep=1pt] at (1,0) {$e$}; 
+\node[circle, fill=white, draw=black, text=black,  inner sep=1pt] at (2,0) {$v$};
+\node[circle, fill=white, draw=black, text=black, inner sep=1pt] at (0,-1) {$p$}; 
+\node[circle, fill=white, draw=black, text=black,  inner sep=1pt] at (1,-1) {$c$}; 
+\node[circle, fill=white, draw=black, text=black, inner sep=1pt] at (2,-1) {$q$};
+\begin{scope}[shift={(3,0)}]
+ \draw[ultra thick, dashed, blue] (0,0) -- (1,0);
+\draw[ultra thick, dashed, blue] (0,-1) -- (1,-1);
+\draw[ultra thick, blue] (0,0) -- (0,-1);
+\draw[ultra thick, blue] (.95,0) -- (.95,-1);
+\draw[ultra thick, red] (1,0) -- (2,0);
+\draw[ultra thick, red] (1,-1) -- (2,-1);
+\draw[ultra thick, dashed, red] (1.05,0) -- (1.05,-1);
+\draw[ultra thick, dashed, red] (2,0) -- (2,-1);
+\node[circle, fill=white, draw=black, text=black, inner sep=1pt] at (0,0) {$p$}; 
+\node[circle, fill=white, draw=black, text=black,  inner sep=1pt] at (1,0) {$u$}; 
+\node[circle, fill=white, draw=black, text=black,  inner sep=1pt] at (2,0) {$t$};
+\node[circle, fill=white, draw=black, text=black, inner sep=1pt] at (0,-1) {$q$}; 
+\node[circle, fill=white, draw=black, text=black,  inner sep=1pt] at (1,-1) {$w$}; 
+\node[circle, fill=white, draw=black, text=black, inner sep=1pt] at (2,-1) {$v$};
+\end{scope}
+\end{tikzpicture}
+</code></pre>
+
+<p>Fig 5.11</p>
+
+<pre><code>\begin{tikzpicture}[scale=1.7]
+\draw[ultra thick, black] (0,0) -- (1,0);
+\draw[ultra thick, black] (0,-1) -- (1,-1);
+\draw[ultra thick, dashed, black] (0,0) -- (0,-1);
+\draw[ultra thick, dashed, black] (.95,0) -- (.95,-1);
+\draw[ultra thick, green] (1,0) -- (2,0);
+\draw[ultra thick, green] (1,-1) -- (2,-1);
+\draw[ultra thick, dashed, green] (1.05,0) -- (1.05,-1);
+\draw[ultra thick, dashed, green] (2,0) -- (2,-1);
+\node[circle, fill=white, draw=black, text=black, inner sep=1pt] at (0,0) {$p$}; 
+\node[circle, fill=white, draw=black, text=black,  inner sep=1pt] at (1,0) {$q$}; 
+\node[circle, fill=white, draw=black, text=black,  inner sep=1pt] at (2,0) {$v$};
+\node[circle, fill=white, draw=black, text=black, inner sep=1pt] at (0,-1) {$e$}; 
+\node[circle, fill=white, draw=black, text=black,  inner sep=1pt] at (1,-1) {$t$}; 
+\node[circle, fill=white, draw=black, text=black, inner sep=1pt] at (2,-1) {$u$};
+\begin{scope}[shift={(3,0)}]
+ \draw[ultra thick, blue] (0,0) -- (1,0);
+\draw[ultra thick, blue] (0,-1) -- (1,-1);
+\draw[ultra thick, dashed, blue] (0,0) -- (0,-1);
+\draw[ultra thick, dashed, blue] (.95,0) -- (.95,-1);
+\draw[ultra thick, red] (1,0) -- (2,0);
+\draw[ultra thick, red] (1,-1) -- (2,-1);
+\draw[ultra thick, dashed, red] (1.05,0) -- (1.05,-1);
+\draw[ultra thick, dashed, red] (2,0) -- (2,-1);
+\node[circle, fill=white, draw=black, text=black, inner sep=1pt] at (0,0) {$e$}; 
+\node[circle, fill=white, draw=black, text=black,  inner sep=1pt] at (1,0) {$c$}; 
+\node[circle, fill=white, draw=black, text=black,  inner sep=1pt] at (2,0) {$p$};
+\node[circle, fill=white, draw=black, text=black, inner sep=1pt] at (0,-1) {$u$}; 
+\node[circle, fill=white, draw=black, text=black,  inner sep=1pt] at (1,-1) {$w$}; 
+\node[circle, fill=white, draw=black, text=black, inner sep=1pt] at (2,-1) {$v$};
+\end{scope}
+\end{tikzpicture}
+</code></pre>
+
+<p>Fig 5.12</p>
+
+<pre><code>\begin{tikzpicture}[scale=1.7]
+\draw[ultra thick, black] (0,0) -- (1,0);
+\draw[ultra thick, black] (0,-1) -- (1,-1);
+\draw[ultra thick, dashed, black] (0,0) -- (0,-1);
+\draw[ultra thick, dashed, black] (.95,0) -- (.95,-1);
+\draw[ultra thick, green] (1,0) -- (2,0);
+\draw[ultra thick, green] (1,-1) -- (2,-1);
+\draw[ultra thick, dashed, green] (1.05,0) -- (1.05,-1);
+\draw[ultra thick, dashed, green] (2,0) -- (2,-1);
+\node[circle, fill=white, draw=black, text=black, inner sep=1pt] at (0,0) {$u$}; 
+\node[circle, fill=white, draw=black, text=black,  inner sep=1pt] at (1,0) {$t$}; 
+\node[circle, fill=white, draw=black, text=black,  inner sep=1pt] at (2,0) {$c$};
+\node[circle, fill=white, draw=black, text=black, inner sep=1pt] at (0,-1) {$w$}; 
+\node[circle, fill=white, draw=black, text=black,  inner sep=1pt] at (1,-1) {$v$}; 
+\node[circle, fill=white, draw=black, text=black, inner sep=1pt] at (2,-1) {$q$};
+\begin{scope}[shift={(3,-.5)}]
+\draw[ultra thick, red] (0,0) -- (0.75,.7);\draw[ultra thick, dashed, red] (0.75,.7) -- (1.5,0);\draw[ultra thick, dashed, red] (0,0) -- (0.75,-.7);\draw[ultra thick, red] (0.75,-.7) -- (1.5,0);\node[circle, fill=white, draw=black, text=black, inner sep=1pt] at (0,0) {$p$}; \node[circle, fill=white, draw=black, text=black,  inner sep=1pt] at (1.5,0) {$e$}; \node[circle, fill=white, draw=black, text=black,  inner sep=1pt] at (0.75,-.7) {$u$}; \node[circle, fill=white, draw=black, text=black,  inner sep=1pt] at (0.75,.7) {$q$};
+\begin{scope}[shift={(2,0)}]
+\draw[ultra thick, dashed, blue] (0,0) -- (0.75,.7);\draw[ultra thick, blue] (0.75,.7) -- (1.5,0);\draw[ultra thick, blue] (0,0) -- (0.75,-.7);\draw[ultra thick, dashed, blue] (0.75,-.7) -- (1.5,0);\node[circle, fill=white, draw=black, text=black, inner sep=1pt] at (0,0) {$p$}; \node[circle, fill=white, draw=black, text=black, inner sep=1pt] at (1.5,0) {$e$}; \node[circle, fill=white, draw=black, text=black, inner sep=1pt] at (0.75,-.7) {$c$}; \node[circle, fill=white, draw=black, text=black, inner sep=1pt] at (0.75,.7) {$w$};\end{scope}
+\end{scope}
+\end{tikzpicture}
+</code></pre>
+
+<p>Fig 5.13</p>
+
+<pre><code>\begin{tikzpicture}[scale=1.7]
+\draw[ultra thick, black] (0,0) -- (1,0);
+\draw[ultra thick, black] (0,-1) -- (1,-1);
+\draw[ultra thick, dashed, black] (0,0) -- (0,-1);
+\draw[ultra thick, dashed, black] (.95,0) -- (.95,-1);
+\draw[ultra thick, dashed, green] (1,0) -- (2,0);
+\draw[ultra thick, dashed, green] (1,-1) -- (2,-1);
+\draw[ultra thick, green] (1.05,0) -- (1.05,-1);
+\draw[ultra thick, green] (2,0) -- (2,-1);
+\node[circle, fill=white, draw=black, text=black, inner sep=1pt] at (0,0) {$w$}; 
+\node[circle, fill=white, draw=black, text=black,  inner sep=1pt] at (1,0) {$c$}; 
+\node[circle, fill=white, draw=black, text=black,  inner sep=1pt] at (2,0) {$q$};
+\node[circle, fill=white, draw=black, text=black, inner sep=1pt] at (0,-1) {$u$}; 
+\node[circle, fill=white, draw=black, text=black,  inner sep=1pt] at (1,-1) {$e$}; 
+\node[circle, fill=white, draw=black, text=black, inner sep=1pt] at (2,-1) {$p$};
+\begin{scope}[shift={(3,-.5)}]
+\draw[ultra thick, red] (0,0) -- (0.75,.7);\draw[ultra thick, dashed, red] (0.75,.7) -- (1.5,0);\draw[ultra thick, dashed, red] (0,0) -- (0.75,-.7);\draw[ultra thick, red] (0.75,-.7) -- (1.5,0);\node[circle, fill=white, draw=black, text=black, inner sep=1pt] at (0,0) {$t$}; \node[circle, fill=white, draw=black, text=black,  inner sep=1pt] at (1.5,0) {$v$}; \node[circle, fill=white, draw=black, text=black,  inner sep=1pt] at (0.75,-.7) {$q$}; \node[circle, fill=white, draw=black, text=black,  inner sep=1pt] at (0.75,.7) {$u$};
+\begin{scope}[shift={(2,0)}]
+\draw[ultra thick, dashed, blue] (0,0) -- (0.75,.7);\draw[ultra thick, blue] (0.75,.7) -- (1.5,0);\draw[ultra thick, blue] (0,0) -- (0.75,-.7);\draw[ultra thick, dashed, blue] (0.75,-.7) -- (1.5,0);\node[circle, fill=white, draw=black,  text=black, inner sep=1pt] at (0,0) {$t$}; \node[circle, fill=white, draw=black, text=black, inner sep=1pt] at (1.5,0) {$v$}; \node[circle, fill=white, draw=black, text=black, inner sep=1pt] at (0.75,-.7) {$p$}; \node[circle, fill=white, draw=black, text=black, inner sep=1pt] at (0.75,.7) {$w$};\end{scope}
+\end{scope}
+\end{tikzpicture}
+</code></pre>
+
+<h3>
+<a id="sixth-moment-loops" class="anchor" href="#sixth-moment-loops" aria-hidden="true"><span class="octicon octicon-link"></span></a>Sixth Moment Loops</h3>
+
+<pre><code>
+</code></pre>
+
+<pre><code>
+</code></pre>
+
+<pre><code>
+</code></pre>
+
+<pre><code>
+</code></pre>
+
+<pre><code>
+</code></pre>
+
+<pre><code>
+</code></pre>
+
+<pre><code>
+</code></pre>
+
+<pre><code>
+</code></pre>
+
+<pre><code>
+</code></pre>
+
+<pre><code>
+</code></pre>
+
+<pre><code>
+</code></pre>
+
+<pre><code>
+</code></pre>
+
+<pre><code>
+</code></pre>
+
+<pre><code>
+</code></pre>
+
+<pre><code>
+</code></pre>
+
+<pre><code>
+</code></pre>
+
+<pre><code>
+</code></pre>
+
+<pre><code>
+</code></pre>
+
+<pre><code>
+</code></pre>
+
+<pre><code>
+</code></pre>
+
+<pre><code>
+</code></pre>
+
+<pre><code>
+</code></pre>
+
+<pre><code>
+</code></pre>
+
+<pre><code>
+</code></pre>
+
+<pre><code>
+</code></pre>
+
+<pre><code>
+</code></pre>
+
+<pre><code>
 </code></pre>
 
       <footer class="site-footer">
