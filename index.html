@@ -1051,86 +1051,347 @@
 <h3>
 <a id="sixth-moment-loops" class="anchor" href="#sixth-moment-loops" aria-hidden="true"><span class="octicon octicon-link"></span></a>Sixth Moment Loops</h3>
 
-<pre><code>
+<pre><code>\begin{tikzpicture}[node distance=1cm, xscale=.75]
+\node (w) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries] {\footnotesize w};
+\node (c) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries, right of=w] {\footnotesize c};
+\node (q) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries, right of=c] {\footnotesize q};
+\node (t) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries, below left of =w] {\footnotesize t};
+\node (v) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries, below right of =q] {\footnotesize v};
+\node (u) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries, below right of=t] {\footnotesize u};
+\node (p) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries, below left of=v] {\footnotesize p};
+\node (e) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries, left of=p] {\footnotesize e};
+\draw (t) to [out=90, in=130] (q);
+\draw (u) to [out=-50, in=-90] (v);
+\draw (q) -- (c) -- (e) -- (p) -- (v);
+\draw (t) -- (w) -- (u);
+\end{tikzpicture}
 </code></pre>
 
-<pre><code>
+<pre><code>\begin{tikzpicture}[node distance=1cm, xscale=.75, yscale=.75]
+\node (w) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries] {\footnotesize w};
+\node (c) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries, right of=w] {\footnotesize c};
+\node (q) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries, right of=c] {\footnotesize q};
+\node (t) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries, below left of =w] {\footnotesize t};
+\node (v) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries, below right of =q] {\footnotesize v};
+\node (u) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries, below right of=t] {\footnotesize u};
+\node (p) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries, below left of=v] {\footnotesize p};
+\node (e) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries, left of=p] {\footnotesize e};
+\draw (t) to [out=-90, in=-130] (p);
+\draw (w) to [out=50, in=90] (v);
+\draw (w) -- (c) -- (e) -- (u) -- (t);
+\draw (p) -- (q) -- (v);
+\end{tikzpicture}
 </code></pre>
 
-<pre><code>
+<pre><code>\begin{tikzpicture}[node distance=1cm, xscale=.75, yscale=.75]
+\node (w) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries] {\footnotesize w};
+\node (c) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries, right of=w] {\footnotesize c};
+\node (q) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries, right of=c] {\footnotesize q};
+\node (t) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries, below left of =w] {\footnotesize t};
+\node (v) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries, below right of =q] {\footnotesize v};
+\node (u) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries, below right of=t] {\footnotesize u};
+\node (p) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries, below left of=v] {\footnotesize p};
+\node (e) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries, left of=p] {\footnotesize e};
+\draw (t) to [out=-90, in=-130] (p);
+\draw (w) to [out=50, in=90] (v);
+\draw (p) -- (e) -- (c) -- (q) -- (v);
+\draw (w) -- (u) -- (t);
+\end{tikzpicture}
 </code></pre>
 
-<pre><code>
+<pre><code>\begin{tikzpicture}[node distance=1cm, xscale=.75, yscale=.75]
+\node (w) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries] {\footnotesize w};
+\node (c) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries, right of=w] {\footnotesize c};
+\node (q) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries, right of=c] {\footnotesize q};
+\node (t) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries, below left of =w] {\footnotesize t};
+\node (v) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries, below right of =q] {\footnotesize v};
+\node (u) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries, below right of=t] {\footnotesize u};
+\node (p) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries, below left of=v] {\footnotesize p};
+\node (e) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries, left of=p] {\footnotesize e};
+\draw (t) to [out=90, in=130] (q);
+\draw (u) to [out=-50, in=-90] (v);
+\draw (t) -- (w) -- (c) -- (e) -- (u);
+\draw (v) -- (p) -- (q);
+\end{tikzpicture}
 </code></pre>
 
-<pre><code>
+<pre><code>\begin{tikzpicture}[node distance=1cm, xscale=.75, yscale=.75]
+\node (w) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries] {\footnotesize w};
+\node (c) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries, right of=w] {\footnotesize c};
+\node (q) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries, right of=c] {\footnotesize q};
+\node (t) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries, below left of =w] {\footnotesize t};
+\node (v) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries, below right of =q] {\footnotesize v};
+\node (u) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries, below right of=t] {\footnotesize u};
+\node (p) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries, below left of=v] {\footnotesize p};
+\node (e) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries, left of=p] {\footnotesize e};
+\draw (t) to [out=90, in=130] (q);
+\draw (u) [white] to [out=-50, in=-90] (v); %invisible
+\draw (t) -- (w) -- (c) -- (q);
+\end{tikzpicture}
 </code></pre>
 
-<pre><code>
+<pre><code>\begin{tikzpicture}[node distance=1cm, xscale=.75, yscale=.75]
+\node (w) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries] {\footnotesize w};
+\node (c) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries, right of=w] {\footnotesize c};
+\node (q) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries, right of=c] {\footnotesize q};
+\node (t) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries, below left of =w] {\footnotesize t};
+\node (v) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries, below right of =q] {\footnotesize v};
+\node (u) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries, below right of=t] {\footnotesize u};
+\node (p) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries, below left of=v] {\footnotesize p};
+\node (e) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries, left of=p] {\footnotesize e};
+\draw (w) to [out=50, in=90] (v);
+\draw (u) [white] to [out=-50, in=-90] (v); %invisible
+\draw (w) -- (c) -- (q) -- (v);
+\end{tikzpicture}
 </code></pre>
 
-<pre><code>
+<pre><code>\begin{tikzpicture}[node distance=1cm, xscale=.75, yscale=.75]
+\node (w) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries] {\footnotesize w};
+\node (c) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries, right of=w] {\footnotesize c};
+\node (q) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries, right of=c] {\footnotesize q};
+\node (t) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries, below left of =w] {\footnotesize t};
+\node (v) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries, below right of =q] {\footnotesize v};
+\node (u) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries, below right of=t] {\footnotesize u};
+\node (p) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries, below left of=v] {\footnotesize p};
+\node (e) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries, left of=p] {\footnotesize e};
+\draw (t) [white] to [out=90, in=130] (q); %invisible
+\draw (t) to [out=-90, in=-130] (p);
+\draw (t) -- (u) -- (e) -- (p);
+\end{tikzpicture}
 </code></pre>
 
-<pre><code>
+<pre><code>\begin{subfigure}{.33\textwidth}
+  \begin{tikzpicture}[node distance=1cm, xscale=.75, yscale=.75]
+\node (w) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries] {\footnotesize w};
+\node (c) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries, right of=w] {\footnotesize c};
+\node (q) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries, right of=c] {\footnotesize q};
+\node (t) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries, below left of =w] {\footnotesize t};
+\node (v) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries, below right of =q] {\footnotesize v};
+\node (u) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries, below right of=t] {\footnotesize u};
+\node (p) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries, below left of=v] {\footnotesize p};
+\node (e) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries, left of=p] {\footnotesize e};
+\draw (t) [white] to [out=90, in=130] (q); %invisible
+\draw (u) to [out=-50, in=-90] (v);
+\draw (u) -- (e) -- (p) -- (v);
+\end{tikzpicture}
 </code></pre>
 
-<pre><code>
+<pre><code>\begin{tikzpicture}[node distance=1cm, xscale=.75, yscale=.75]
+\node (w) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries] {\footnotesize w};
+\node (c) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries, right of=w] {\footnotesize c};
+\node (q) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries, right of=c] {\footnotesize q};
+\node (t) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries, below left of =w] {\footnotesize t};
+\node (v) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries, below right of =q] {\footnotesize v};
+\node (u) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries, below right of=t] {\footnotesize u};
+\node (p) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries, below left of=v] {\footnotesize p};
+\node (e) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries, left of=p] {\footnotesize e};
+\draw (t) [white] to [out=90, in=130] (q); %invisible
+\draw (u) [white] to [out=-50, in=-90] (v); %invisible
+\draw (t) -- (w) -- (c) -- (q) -- (v) -- (p) -- (e) -- (u) -- (t);
+\end{tikzpicture}
 </code></pre>
 
-<pre><code>
+<pre><code>\begin{tikzpicture}[node distance=1cm, xscale=.75, yscale=.75]
+\node (w) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries] {\footnotesize w};
+\node (c) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries, right of=w] {\footnotesize c};
+\node (q) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries, right of=c] {\footnotesize q};
+\node (t) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries, below left of =w] {\footnotesize t};
+\node (v) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries, below right of =q] {\footnotesize v};
+\node (u) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries, below right of=t] {\footnotesize u};
+\node (p) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries, below left of=v] {\footnotesize p};
+\node (e) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries, left of=p] {\footnotesize e};
+\draw (t) [white] to [out=90, in=130] (q); %invisible
+\draw (u) [white] to [out=-50, in=-90] (v); %invisible
+\draw (t) -- (w) -- (u) -- (t);
+\end{tikzpicture}
 </code></pre>
 
-<pre><code>
+<pre><code>\begin{tikzpicture}[node distance=1cm, xscale=.75, yscale=.75]
+\node (w) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries] {\footnotesize w};
+\node (c) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries, right of=w] {\footnotesize c};
+\node (q) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries, right of=c] {\footnotesize q};
+\node (t) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries, below left of =w] {\footnotesize t};
+\node (v) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries, below right of =q] {\footnotesize v};
+\node (u) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries, below right of=t] {\footnotesize u};
+\node (p) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries, below left of=v] {\footnotesize p};
+\node (e) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries, left of=p] {\footnotesize e};
+\draw (t) [white] to [out=90, in=130] (q); %invisible
+\draw (u) [white] to [out=-50, in=-90] (v); %invisible
+\draw (q) -- (p) -- (v) -- (q);
+\end{tikzpicture}
 </code></pre>
 
-<pre><code>
+<pre><code> \begin{tikzpicture}[node distance=1cm, xscale=.75, yscale=.75]
+\node (w) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries] {\footnotesize w};
+\node (c) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries, right of=w] {\footnotesize c};
+\node (q) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries, right of=c] {\footnotesize q};
+\node (t) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries, below left of =w] {\footnotesize t};
+\node (v) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries, below right of =q] {\footnotesize v};
+\node (u) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries, below right of=t] {\footnotesize u};
+\node (p) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries, below left of=v] {\footnotesize p};
+\node (e) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries, left of=p] {\footnotesize e};
+\draw (t) [white] to [out=90, in=130] (q); %invisible
+\draw (u) [white] to [out=-50, in=-90] (v); %invisible
+\draw (t) -- (w) -- (c) -- (e) -- (u) -- (t);
+\end{tikzpicture}
 </code></pre>
 
-<pre><code>
+<pre><code>\begin{tikzpicture}[node distance=1cm, xscale=.75, yscale=.75]
+\node (w) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries] {\footnotesize w};
+\node (c) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries, right of=w] {\footnotesize c};
+\node (q) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries, right of=c] {\footnotesize q};
+\node (t) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries, below left of =w] {\footnotesize t};
+\node (v) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries, below right of =q] {\footnotesize v};
+\node (u) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries, below right of=t] {\footnotesize u};
+\node (p) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries, below left of=v] {\footnotesize p};
+\node (e) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries, left of=p] {\footnotesize e};
+\draw (t) [white] to [out=90, in=130] (q); %invisible
+\draw (u) [white] to [out=-50, in=-90] (v); %invisible
+\draw (c) -- (q) -- (v) -- (p) -- (e) -- (c);
+\end{tikzpicture}
 </code></pre>
 
-<pre><code>
+<pre><code>\begin{tikzpicture}[node distance=1cm, xscale=.75, yscale=.75]
+\node (w) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries] {\footnotesize w};
+\node (c) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries, right of=w] {\footnotesize c};
+\node (q) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries, right of=c] {\footnotesize q};
+\node (t) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries, below left of =w] {\footnotesize t};
+\node (v) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries, below right of =q] {\footnotesize v};
+\node (u) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries, below right of=t] {\footnotesize u};
+\node (p) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries, below left of=v] {\footnotesize p};
+\node (e) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries, left of=p] {\footnotesize e};
+\draw (w) to [out=50, in=90] (v);
+\draw (u) to [out=-50, in=-90] (v);
+\draw (w) -- (u);
+\end{tikzpicture}
 </code></pre>
 
-<pre><code>
+<pre><code>\begin{tikzpicture}[node distance=1cm, xscale=.75, yscale=.75]
+\node (w) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries] {\footnotesize w};
+\node (c) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries, right of=w] {\footnotesize c};
+\node (q) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries, right of=c] {\footnotesize q};
+\node (t) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries, below left of =w] {\footnotesize t};
+\node (v) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries, below right of =q] {\footnotesize v};
+\node (u) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries, below right of=t] {\footnotesize u};
+\node (p) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries, below left of=v] {\footnotesize p};
+\node (e) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries, left of=p] {\footnotesize e};
+\draw (t) to [out=90, in=130] (q);
+\draw (t) to [out=-90, in=-130] (p);
+\draw (q) -- (p);
+\end{tikzpicture}
 </code></pre>
 
-<pre><code>
+<pre><code>\begin{tikzpicture}[node distance=1cm, xscale=.75]
+\node (w) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries] {\footnotesize w};
+\node (c) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries, right of=w] {\footnotesize c};
+\node (q) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries, right of=c] {\footnotesize q};
+\node (t) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries, below left of =w] {\footnotesize t};
+\node (v) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries, below right of =q] {\footnotesize v};
+\node (u) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries, below right of=t] {\footnotesize u};
+\node (p) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries, below left of=v] {\footnotesize p};
+\node (e) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries, left of=p] {\footnotesize e};
+\draw (t) to [out=90, in=130] (q);
+\draw (t) to [out=-90, in=-130] (p);
+\draw (q) -- (c) -- (e) -- (p);
+\end{tikzpicture}
 </code></pre>
 
-<pre><code>
+<pre><code>\begin{tikzpicture}[node distance=1cm, xscale=.75]
+\node (w) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries] {\footnotesize w};
+\node (c) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries, right of=w] {\footnotesize c};
+\node (q) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries, right of=c] {\footnotesize q};
+\node (t) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries, below left of =w] {\footnotesize t};
+\node (v) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries, below right of =q] {\footnotesize v};
+\node (u) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries, below right of=t] {\footnotesize u};
+\node (p) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries, below left of=v] {\footnotesize p};
+\node (e) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries, left of=p] {\footnotesize e};
+\draw (u) to [out=-50, in=-90] (v);
+\draw (w) to [out=50, in=90] (v);
+\draw (w) -- (c) -- (e) -- (u);
+\end{tikzpicture}
 </code></pre>
 
-<pre><code>
+<pre><code>\begin{tikzpicture}[node distance=1cm, xscale=.75, yscale=.75]
+\node (w) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries] {\footnotesize w};
+\node (c) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries, right of=w] {\footnotesize c};
+\node (q) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries, right of=c] {\footnotesize q};
+\node (t) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries, below left of =w] {\footnotesize t};
+\node (v) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries, below right of =q] {\footnotesize v};
+\node (u) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries, below right of=t] {\footnotesize u};
+\node (p) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries, below left of=v] {\footnotesize p};
+\node (e) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries, left of=p] {\footnotesize e};
+\draw (t) to [out=90, in=130] (q);
+\draw (u) to [out=-50, in=-90] (v);
+\draw (q) -- (p) -- (v);
+\draw (t) -- (w) -- (u);
+\end{tikzpicture}
 </code></pre>
 
-<pre><code>
+<pre><code>\begin{tikzpicture}[node distance=1cm, xscale=.75, yscale=.75]
+\node (w) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries] {\footnotesize w};
+\node (c) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries, right of=w] {\footnotesize c};
+\node (q) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries, right of=c] {\footnotesize q};
+\node (t) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries, below left of =w] {\footnotesize t};
+\node (v) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries, below right of =q] {\footnotesize v};
+\node (u) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries, below right of=t] {\footnotesize u};
+\node (p) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries, below left of=v] {\footnotesize p};
+\node (e) [draw, circle, inner sep=1pt, fill=blue!20, font=\bfseries, left of=p] {\footnotesize e};
+\draw (t) to [out=-90, in=-130] (p);
+\draw (w) to [out=50, in=90] (v);
+\draw (p) -- (q) -- (v);
+\draw (t) -- (u) -- (w);
+\end{tikzpicture}
 </code></pre>
 
-<pre><code>
+<pre><code>\begin{tikzpicture}[node distance=1cm, xscale=.75, yscale=.75]
+\node (w) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries] {\footnotesize w};
+\node (c) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries, right of=w] {\footnotesize c};
+\node (q) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries, right of=c] {\footnotesize q};
+\node (t) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries, below left of =w] {\footnotesize t};
+\node (v) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries, below right of =q] {\footnotesize v};
+\node (u) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries, below right of=t] {\footnotesize u};
+\node (p) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries, below left of=v] {\footnotesize p};
+\node (e) [draw, circle, inner sep=1pt, fill=apricot, font=\bfseries, left of=p] {\footnotesize e};
+\draw (t) [white] to [out=90, in=130] (q); %invisible
+\draw (u) [white] to [out=-50, in=-90] (v); %invisible
+\draw (c) to [out=-70, in=70] (e) ;
+\draw (e) to [out=110, in=-110] (c);
+\end{tikzpicture}
 </code></pre>
 
-<pre><code>
+<p>Final Diagram of Chapter 5 (Fig 5.15)</p>
+
+<pre><code>\begin{tikzpicture}[scale=1.7]
+\draw[ultra thick, dashed, blue] (0,0) -- (0.7,.2);
+\draw[ultra thick, red] (0,0) -- (0,-1.1);
+\draw[ultra thick, black] (0,-1.1) -- (.7,-.8);
+\draw[ultra thick, dashed, black] (.7,-.8) -- (1.55,-1);
+\draw[ultra thick, red] (1.55,-1) -- (1.55,0);
+\draw[ultra thick, dashed, blue] (1.55,0) -- (0.9,-.3);
+\draw[ultra thick, dashed, black] (0,-1.1) -- (.9,-1.5);
+\draw[ultra thick, black] (.9,-1.5) -- (1.55,-1);
+\draw[ultra thick, blue] (1.55,0) -- (.7,.2);
+\draw[ultra thick, green] (.7,.2) -- (.7,-.8);
+\node[circle, fill=white, draw=black, text=black,  inner sep=1pt] at (0.7,-.8) {$e$};
+\draw[ultra thick, dashed, blue] (.9,-.3) -- (.9,-1.5);
+\draw[ultra thick, green] (.9,-.3) -- (.9,-1.5);
+\draw[ultra thick, blue] (0,0) -- (0.9,-.3);
+\node[circle, fill=white, draw=black, text=black, inner sep=1pt] at (0,0) {$t$}; 
+\node[circle, fill=white, draw=black, text=black,  inner sep=1pt] at (0.7,.2) {$w$}; 
+\node[circle, fill=white, draw=black, text=black,  inner sep=1pt] at (1.55,0) {$v$};
+\node[circle, fill=white, draw=black, text=black, inner sep=1pt] at (.9,-.3) {$c$}; 
+\node[circle, fill=white, draw=black, text=black,  inner sep=1pt] at (0,-1.1) {$u$}; 
+\node[circle, fill=white, draw=black, text=black, inner sep=1pt] at (1.55,-1) {$q$}; 
+\node[circle, fill=white, draw=black, text=black,  inner sep=1pt] at (0.9,-1.5) {$p$}; 
+\begin{scope}[shift={(2.5,-.5)}]
+\draw[ultra thick, green] (0,0) -- (0.75,.7);\draw[ultra thick, dashed, green] (0.75,.7) -- (1.5,0);\draw[ultra thick, dashed, green] (0,0) -- (0.75,-.7);\draw[ultra thick, green] (0.75,-.7) -- (1.5,0);\node[circle, fill=white, draw=black, text=black, inner sep=1pt] at (0,0) {$e$}; \node[circle, fill=white, draw=black, text=black,  inner sep=1pt] at (1.5,0) {$p$}; \node[circle, fill=white, draw=black, text=black,  inner sep=1pt] at (0.75,-.7) {$c$}; \node[circle, fill=white, draw=black, text=black,  inner sep=1pt] at (0.75,.7) {$w$};
+\begin{scope}[shift={(2,0)}]
+\draw[ultra thick, dashed, red] (0,0) -- (0.75,.7);\draw[ultra thick, red] (0.75,.7) -- (1.5,0);\draw[ultra thick, red] (0,0) -- (0.75,-.7);\draw[ultra thick, dashed, red] (0.75,-.7) -- (1.5,0);\node[circle, fill=white, draw=black, text=black, inner sep=1pt] at (0,0) {$q$}; \node[circle, fill=white, draw=black, text=black, inner sep=1pt] at (1.5,0) {$u$}; \node[circle, fill=white, draw=black, text=black, inner sep=1pt] at (0.75,-.7) {$v$}; \node[circle, fill=white, draw=black,  text=black, inner sep=1pt] at (0.75,.7) {$t$};\end{scope}
+\end{scope}
+\end{tikzpicture}
 </code></pre>
 
-<pre><code>
-</code></pre>
-
-<pre><code>
-</code></pre>
-
-<pre><code>
-</code></pre>
-
-<pre><code>
-</code></pre>
-
-<pre><code>
-</code></pre>
-
-<pre><code>
-</code></pre>
+<p>The End.</p>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/rupertsmall/particle-diagrams">Particle-diagrams</a> is maintained by <a href="https://github.com/rupertsmall">rupertsmall</a>.</span>
