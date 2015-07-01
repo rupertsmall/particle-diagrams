@@ -1,0 +1,32 @@
+\begin{tikzpicture}[scale=1.7]
+\draw[ultra thick, black] (0,0) -- (1,0);
+\draw[ultra thick, black] (0,-1) -- (1,-1);
+\draw[ultra thick, dashed, black] (0,0) -- (0,-1);
+\draw[ultra thick, dashed, black] (.95,0) -- (.95,-1);
+\draw[ultra thick, dashed, green] (1,0) -- (2,0);
+\draw[ultra thick, dashed, green] (1,-1) -- (2,-1);
+\draw[ultra thick, green] (1.05,0) -- (1.05,-1);
+\draw[ultra thick, green] (2,0) -- (2,-1);
+\node[circle, fill=white, draw=black, text=black, inner sep=1pt] at (0,0) {$t$}; 
+\node[circle, fill=white, draw=black, text=black,  inner sep=1pt] at (1,0) {$e$}; 
+\node[circle, fill=white, draw=black, text=black,  inner sep=1pt] at (2,0) {$v$};
+\node[circle, fill=white, draw=black, text=black, inner sep=1pt] at (0,-1) {$p$}; 
+\node[circle, fill=white, draw=black, text=black,  inner sep=1pt] at (1,-1) {$c$}; 
+\node[circle, fill=white, draw=black, text=black, inner sep=1pt] at (2,-1) {$q$};
+\begin{scope}[shift={(3,0)}]
+ \draw[ultra thick, dashed, blue] (0,0) -- (1,0);
+\draw[ultra thick, dashed, blue] (0,-1) -- (1,-1);
+\draw[ultra thick, blue] (0,0) -- (0,-1);
+\draw[ultra thick, blue] (.95,0) -- (.95,-1);
+\draw[ultra thick, red] (1,0) -- (2,0);
+\draw[ultra thick, red] (1,-1) -- (2,-1);
+\draw[ultra thick, dashed, red] (1.05,0) -- (1.05,-1);
+\draw[ultra thick, dashed, red] (2,0) -- (2,-1);
+\node[circle, fill=white, draw=black, text=black, inner sep=1pt] at (0,0) {$p$}; 
+\node[circle, fill=white, draw=black, text=black,  inner sep=1pt] at (1,0) {$u$}; 
+\node[circle, fill=white, draw=black, text=black,  inner sep=1pt] at (2,0) {$t$};
+\node[circle, fill=white, draw=black, text=black, inner sep=1pt] at (0,-1) {$q$}; 
+\node[circle, fill=white, draw=black, text=black,  inner sep=1pt] at (1,-1) {$w$}; 
+\node[circle, fill=white, draw=black, text=black, inner sep=1pt] at (2,-1) {$v$};
+\end{scope}
+\end{tikzpicture}
