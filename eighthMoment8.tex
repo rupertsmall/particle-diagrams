@@ -1,0 +1,21 @@
+\begin{tikzpicture}[scale=1.7]
+\draw[ultra thick, black] (0,0) -- (1,0);
+\draw[ultra thick, black] (0,-1) -- (1,-1);
+\draw[ultra thick, dashed, black] (0,0) -- (0,-1);
+\draw[ultra thick, dashed, black] (.95,0) -- (.95,-1);
+\draw[ultra thick, dashed, green] (1,0) -- (2,0);
+\draw[ultra thick, dashed, green] (1,-1) -- (2,-1);
+\draw[ultra thick, green] (1.05,0) -- (1.05,-1);
+\draw[ultra thick, green] (2,0) -- (2,-1);
+\node[circle, fill=white, draw=black, text=black, inner sep=1pt] at (0,0) {$w$}; 
+\node[circle, fill=white, draw=black, text=black,  inner sep=1pt] at (1,0) {$c$}; 
+\node[circle, fill=white, draw=black, text=black,  inner sep=1pt] at (2,0) {$q$};
+\node[circle, fill=white, draw=black, text=black, inner sep=1pt] at (0,-1) {$u$}; 
+\node[circle, fill=white, draw=black, text=black,  inner sep=1pt] at (1,-1) {$e$}; 
+\node[circle, fill=white, draw=black, text=black, inner sep=1pt] at (2,-1) {$p$};
+\begin{scope}[shift={(3,-.5)}]
+\draw[ultra thick, red] (0,0) -- (0.75,.7);\draw[ultra thick, dashed, red] (0.75,.7) -- (1.5,0);\draw[ultra thick, dashed, red] (0,0) -- (0.75,-.7);\draw[ultra thick, red] (0.75,-.7) -- (1.5,0);\node[circle, fill=white, draw=black, text=black, inner sep=1pt] at (0,0) {$t$}; \node[circle, fill=white, draw=black, text=black,  inner sep=1pt] at (1.5,0) {$v$}; \node[circle, fill=white, draw=black, text=black,  inner sep=1pt] at (0.75,-.7) {$q$}; \node[circle, fill=white, draw=black, text=black,  inner sep=1pt] at (0.75,.7) {$u$};
+\begin{scope}[shift={(2,0)}]
+\draw[ultra thick, dashed, blue] (0,0) -- (0.75,.7);\draw[ultra thick, blue] (0.75,.7) -- (1.5,0);\draw[ultra thick, blue] (0,0) -- (0.75,-.7);\draw[ultra thick, dashed, blue] (0.75,-.7) -- (1.5,0);\node[circle, fill=white, draw=black,  text=black, inner sep=1pt] at (0,0) {$t$}; \node[circle, fill=white, draw=black, text=black, inner sep=1pt] at (1.5,0) {$v$}; \node[circle, fill=white, draw=black, text=black, inner sep=1pt] at (0.75,-.7) {$p$}; \node[circle, fill=white, draw=black, text=black, inner sep=1pt] at (0.75,.7) {$w$};\end{scope}
+\end{scope}
+\end{tikzpicture}
